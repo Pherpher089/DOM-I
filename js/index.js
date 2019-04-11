@@ -86,14 +86,27 @@ topCont_p[1].textContent = siteContent["main-content"]["about-content"];
 let mainCont_img = document.querySelector('.middle-img');
 mainCont_img.src = siteContent["main-content"]["middle-img-src"];
 
-let bottomCont_h4 = document.querySelectorAll('.text-content h4');
+let bottomCont_h4 = document.querySelectorAll('.bottom-content .text-content h4');
 bottomCont_h4[0].textContent = siteContent["main-content"]["services-h4"];
 bottomCont_h4[1].textContent = siteContent["main-content"]["product-h4"];
+bottomCont_h4[2].textContent = siteContent["main-content"]["vision-h4"];
 
-let bottomCont_p = document.querySelectorAll(".text-content p");
+let bottomCont_p = document.querySelectorAll(".bottom-content .text-content p");
 bottomCont_p[0].textContent = siteContent["main-content"]["services-content"];
 bottomCont_p[1].textContent = siteContent["main-content"]["product-content"];
+bottomCont_p[2].textContent = siteContent["main-content"]["vision-content"];
 
 /*Contact*/
 
+let contact_h4 = document.querySelector('.contact h4');
+contact_h4.textContent = siteContent.contact['contact-h4'];
+
+let contactInfo = document.querySelectorAll('.contact p');
+contactInfo[0].textContent = siteContent.contact.address;
+contactInfo[1].textContent = siteContent.contact.phone;
+contactInfo[2].textContent = siteContent.contact.email;
+
 /*Footer*/
+
+let footer_p = document.querySelector('footer p');
+footer_p.textContent = siteContent.footer.copyright;
